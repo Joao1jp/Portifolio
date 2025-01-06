@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     border: 0;
     padding: 0;
@@ -6,17 +6,17 @@ body{
     height: 100%;
 }
 
-#NavBar{
+#NavBar {
    background-color: black;
    height: 5em;
 }
 
-#NavBar-Itens{
+#NavBar-Itens {
     display: flex;
     justify-content: center;
 }
 
-.Links{
+.Links {
     text-decoration: none;
     justify-content: center;
     color: aliceblue;
@@ -35,4 +35,32 @@ body{
     border: 2px solid black; /* Adiciona uma borda preta */
     border-radius: 10px; /* Deixa os cantos arredondados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destacar */
+    display: flex; /* Flexbox para alinhar o texto e a imagem lado a lado */
+}
+
+a
+
+.Texto-Imagem {
+    display: flex; /* Flexbox para alinhar a imagem à esquerda e o texto à direita */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    width: 100%;
+}
+
+.Texto {
+    flex: 1; /* O texto ocupa o restante do espaço */
+    margin-left: 2em; /* Espaço entre a imagem e o texto */
+}
+
+.Imagem {
+    flex: 0 0 auto; /* A imagem tem um tamanho fixo */
+    width: 20em; /* Tamanho fixo para a imagem, você pode ajustar */
+    height: 100%; /* A imagem ocupa toda a altura do quadro */
+    border-radius: 10px; /* Cantos arredondados na imagem */
+    object-fit: cover; /* A imagem cobre toda a área sem distorção */
+}
+
+.Imagem img {
+    width: 100%; /* A imagem ocupa toda a largura da div */
+    height: 100%; /* A imagem ocupa toda a altura da div */
+    border-radius: 10px; /* Cantos arredondados na imagem */
 }
