@@ -38,8 +38,6 @@ body {
     display: flex; /* Flexbox para alinhar o texto e a imagem lado a lado */
 }
 
-a
-
 .Texto-Imagem {
     display: flex; /* Flexbox para alinhar a imagem à esquerda e o texto à direita */
     align-items: center; /* Alinha o conteúdo verticalmente no centro */
