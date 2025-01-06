@@ -46,7 +46,8 @@ body {
 
 .Texto {
     flex: 1; /* O texto ocupa o restante do espaço */
-    margin-left: 2em; /* Espaço entre a imagem e o texto */
+    margin-left: 2em;/* Espaço entre a imagem e o texto */
+    margin-right: 2em;
 }
 
 .Imagem {
