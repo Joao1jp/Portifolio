@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: darkgray;
+    height: 100%;
+}
+
+#NavBar{
+   background-color: black;
+   height: 5em;
+}
+
+#NavBar-Itens{
+    display: flex;
+    justify-content: center;
+}
+
+.Links{
+    text-decoration: none;
+    justify-content: center;
+    color: aliceblue;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-right: 1em;
+    font-size: 1.3em;
+}
+
+.Quadro-Principal {
+    margin: auto;
+    margin-top: 10.5em;
+    background-color: aliceblue;
+    height: 35em;
+    width: 70em;
+    border: 2px solid black; /* Adiciona uma borda preta */
+    border-radius: 10px; /* Deixa os cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destacar */
+}
