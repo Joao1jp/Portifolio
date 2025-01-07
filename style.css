@@ -4,57 +4,108 @@ body {
     padding: 0;
     background-color: darkgray;
     height: 100%;
+    font-family: Arial, sans-serif;
 }
 
 #NavBar {
-   background-color: black;
-   height: 5em;
+    background-color: black;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #NavBar-Itens {
     display: flex;
     justify-content: center;
+    gap: 2em;
 }
 
 .Links {
     text-decoration: none;
-    justify-content: center;
     color: aliceblue;
-    margin-left: 1em;
-    margin-top: 1em;
-    margin-right: 1em;
     font-size: 1.3em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.Links:hover {
+    color: #0073e6;
 }
 
 .Quadro-Principal {
     margin: auto;
     margin-top: 10.5em;
     background-color: aliceblue;
-    height: 35em;
+    padding: 2em;
     width: 70em;
     border: 2px solid black; /* Adiciona uma borda preta */
     border-radius: 10px; /* Deixa os cantos arredondados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destacar */
-    display: flex; /* Flexbox para alinhar o texto e a imagem lado a lado */
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo verticalmente */
+    gap: 2em; /* Espaçamento entre elementos */
+}
+
+#capacitacoes {
+    background-color: #f9f9f9;
+    padding: 2em 1em;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#capacitacoes h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.habilidades-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha quando necessário */
+    justify-content: space-around; /* Espaço uniforme entre os itens */
+    gap: 2em;
+}
+
+.habilidade {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    width: 15em; /* Largura consistente para os quadros */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Texto alinhado à esquerda */
+}
+
+.habilidade h3 {
+    font-size: 1.5em;
+    color: #0073e6;
+    margin-bottom: 0.5em;
+}
+
+.habilidade p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
 }
 
 .Texto-Imagem {
     display: flex; /* Flexbox para alinhar a imagem à esquerda e o texto à direita */
     align-items: center; /* Alinha o conteúdo verticalmente no centro */
     width: 100%;
+    gap: 2em; /* Espaço entre a imagem e o texto */
 }
 
 .Texto {
     flex: 1; /* O texto ocupa o restante do espaço */
-    margin-left: 2em;/* Espaço entre a imagem e o texto */
-    margin-right: 2em;
 }
 
 .Imagem {
     flex: 0 0 auto; /* A imagem tem um tamanho fixo */
-    width: 20em; /* Tamanho fixo para a imagem, você pode ajustar */
+    width: 20em; /* Tamanho fixo para a imagem */
     height: 100%; /* A imagem ocupa toda a altura do quadro */
-    border-radius: 10px; /* Cantos arredondados na imagem */
+    border-radius: 10px; /* Cantos arredondados */
     object-fit: cover; /* A imagem cobre toda a área sem distorção */
 }
 
@@ -62,4 +113,13 @@ body {
     width: 100%; /* A imagem ocupa toda a largura da div */
     height: 100%; /* A imagem ocupa toda a altura da div */
     border-radius: 10px; /* Cantos arredondados na imagem */
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 1em 0;
+    margin-top: 2em;
+    font-size: 0.9em;
 }
