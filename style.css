@@ -13,6 +13,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
 }
 
 #NavBar-Itens {
@@ -167,6 +168,10 @@ footer p {
 
 @media (max-width: 768px) {
 
+    .Links{
+        font-size: 1.2em;
+    }
+    
     .Quadro-Principal {
         margin-top: 2em;
         padding: 1.5em;
@@ -187,10 +192,6 @@ footer p {
     .Imagem {
         width: 100%;
         height: auto;
-    }
-
-    footer {
-        max-width: 100%;
     }
     
     footer ul li {
@@ -215,7 +216,7 @@ footer p {
         font-size: 0.9em;
     }
 
-    footer {
-        max-width: 100%;
+    .Links{
+        font-size: .8em;
     }
 }
