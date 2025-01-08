@@ -39,12 +39,13 @@ body {
     background-color: aliceblue;
     padding: 2em;
     width: 70em;
-    border: 2px solid black; /* Adiciona uma borda preta */
-    border-radius: 10px; /* Deixa os cantos arredondados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destacar */
+    max-width: 80%; /* Ajuste para telas menores */
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
-    flex-direction: column; /* Alinha o conteúdo verticalmente */
-    gap: 2em; /* Espaçamento entre elementos */
+    flex-direction: column;
+    gap: 2em;
 }
 
 #capacitacoes {
@@ -63,8 +64,8 @@ body {
 
 .habilidades-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem linha quando necessário */
-    justify-content: space-around; /* Espaço uniforme entre os itens */
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 2em;
 }
 
@@ -73,9 +74,10 @@ body {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1em;
-    width: 15em; /* Largura consistente para os quadros */
+    width: 15em;
+    max-width: 90%; /* Ajuste para telas menores */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Texto alinhado à esquerda */
+    text-align: left;
 }
 
 .habilidade h3 {
@@ -91,28 +93,30 @@ body {
 }
 
 .Texto-Imagem {
-    display: flex; /* Flexbox para alinhar a imagem à esquerda e o texto à direita */
-    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    align-items: center;
     width: 100%;
-    gap: 2em; /* Espaço entre a imagem e o texto */
+    gap: 2em;
 }
 
 .Texto {
-    flex: 1; /* O texto ocupa o restante do espaço */
+    flex: 1;
 }
 
 .Imagem {
-    flex: 0 0 auto; /* A imagem tem um tamanho fixo */
-    width: 20em; /* Tamanho fixo para a imagem */
-    height: 100%; /* A imagem ocupa toda a altura do quadro */
-    border-radius: 10px; /* Cantos arredondados */
-    object-fit: cover; /* A imagem cobre toda a área sem distorção */
+    flex: 0 0 auto;
+    width: 20em;
+    max-width: 100%; /* Ajuste para telas menores */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .Imagem img {
-    width: 100%; /* A imagem ocupa toda a largura da div */
-    height: 100%; /* A imagem ocupa toda a altura da div */
-    border-radius: 10px; /* Cantos arredondados na imagem */
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 
 footer {
@@ -122,4 +126,57 @@ footer {
     padding: 1em 0;
     margin-top: 2em;
     font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #NavBar {
+        height: auto;
+        padding: 1em;
+    }
+
+    #NavBar-Itens {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .Quadro-Principal {
+        margin-top: 2em;
+        padding: 1.5em;
+    }
+
+    #capacitacoes h2 {
+        font-size: 2em;
+    }
+
+    .habilidade {
+        width: 100%;
+    }
+
+    .Texto-Imagem {
+        flex-direction: column;
+    }
+
+    .Imagem {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .Links {
+        font-size: 1em;
+    }
+
+    #capacitacoes h2 {
+        font-size: 1.8em;
+    }
+
+    .habilidade h3 {
+        font-size: 1.2em;
+    }
+
+    .habilidade p {
+        font-size: 0.9em;
+    }
 }
