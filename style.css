@@ -214,4 +214,8 @@ footer p {
     .habilidade p {
         font-size: 0.9em;
     }
+
+    footer {
+        max-width: 100%;
+    }
 }
