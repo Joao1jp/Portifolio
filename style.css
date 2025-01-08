@@ -217,7 +217,7 @@ footer p {
     }
 
     .Imagem {
-        width: 90%;
+        max-width: 80%;
         aspect-ratio: 1 / 1;
     }
 
@@ -253,7 +253,7 @@ footer p {
     }
 
     .Imagem {
-        width: 100%;
+        max-width: 80%;
         aspect-ratio: 1 / 1;
     }
 
