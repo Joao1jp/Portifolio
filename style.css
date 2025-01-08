@@ -123,20 +123,29 @@ p {
     flex: 1;
 }
 
+
 .Imagem {
     flex: 0 0 auto;
     width: 20em;
-    max-width: 100%; /* Ajuste para telas menores */
-    height: auto;
+    aspect-ratio: 1 / 1; /* Proporção 1:1 */
     border-radius: 10px;
-    object-fit: cover;
+    overflow: hidden; /* Oculta o que ultrapassa o espaço 1:1 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Para garantir a posição do object */
 }
 
 .Imagem img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    object-fit: cover;
+    object-position: right top;
+    display: block;
+    margin: 0 auto;
 }
+
 
 footer {
     background-color: black;
@@ -208,8 +217,13 @@ footer p {
     }
 
     .Imagem {
+        width: 90%;
+        aspect-ratio: 1 / 1;
+    }
+
+    .Imagem img {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     footer ul li {
@@ -236,5 +250,15 @@ footer p {
 
     .habilidade p {
         font-size: 0.9em;
+    }
+
+    .Imagem {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    .Imagem img {
+        width: 100%;
+        height: 100%;
     }
 }
