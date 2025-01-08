@@ -120,25 +120,52 @@ body {
 }
 
 footer {
-    text-align: center;
     background-color: black;
     color: aliceblue;
-    padding: 1em 0;
-    margin-top: 2em;
+    padding: 2em 1em;
+    text-align: center;
     font-size: 0.9em;
+    border-top: 2px solid #333;
+    margin-top: 10.5em;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    #NavBar {
-        height: auto;
-        padding: 1em;
-    }
+footer .Contato {
+    margin-bottom: 1.5em;
+}
 
-    #NavBar-Itens {
-        flex-direction: column;
-        gap: 1em;
-    }
+footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #0073e6;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5em;
+}
+
+footer ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #0073e6;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
 
     .Quadro-Principal {
         margin-top: 2em;
@@ -161,12 +188,16 @@ footer {
         width: 100%;
         height: auto;
     }
+
+    footer ul li {
+        font-size: 0.9em;
+    }
+    footer h3 {
+        font-size: 1.2em;
+    }
 }
 
 @media (max-width: 480px) {
-    .Links {
-        font-size: 1em;
-    }
 
     #capacitacoes h2 {
         font-size: 1.8em;
