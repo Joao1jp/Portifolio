@@ -7,13 +7,31 @@ body {
     font-family: Arial, sans-serif;
 }
 
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; /* Para títulos, um peso mais grosso é ideal */
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em; /* Ajuste o tamanho como preferido */
+    color: #555; /* Para um tom suave e legível */
+    line-height: 1.6; /* Para uma melhor legibilidade */
+}
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+
 #NavBar {
     background-color: black;
     height: 5em;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
 }
 
 #NavBar-Itens {
@@ -168,10 +186,10 @@ footer p {
 
 @media (max-width: 768px) {
 
-    .Links{
-        font-size: 1.2em;
+    .Links {
+        font-size: 1em;
     }
-    
+
     .Quadro-Principal {
         margin-top: 2em;
         padding: 1.5em;
@@ -193,7 +211,7 @@ footer p {
         width: 100%;
         height: auto;
     }
-    
+
     footer ul li {
         font-size: 0.9em;
     }
@@ -203,6 +221,10 @@ footer p {
 }
 
 @media (max-width: 480px) {
+
+    .Links {
+        font-size: .8em;
+    }
 
     #capacitacoes h2 {
         font-size: 1.8em;
@@ -214,9 +236,5 @@ footer p {
 
     .habilidade p {
         font-size: 0.9em;
-    }
-
-    .Links{
-        font-size: .8em;
     }
 }
