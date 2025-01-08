@@ -13,7 +13,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
 }
 
 #NavBar-Itens {
@@ -128,7 +127,6 @@ footer {
     font-size: 0.9em;
     border-top: 2px solid #333;
     margin-top: 10.5em;
-    max-width: 100%;
 }
 
 footer .Contato {
@@ -191,6 +189,10 @@ footer p {
         height: auto;
     }
 
+    footer {
+        max-width: 100%;
+    }
+    
     footer ul li {
         font-size: 0.9em;
     }
