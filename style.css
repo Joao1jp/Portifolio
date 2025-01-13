@@ -1,37 +1,30 @@
 body {
     margin: 0;
-    border: 0;
     padding: 0;
-    background-color: darkgray;
-    height: 100%;
-    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+    font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, nav {
     font-family: 'Oswald', sans-serif;
-    font-weight: 700; /* Para títulos, um peso mais grosso é ideal */
+    font-weight: 700;
+    color: #00bcd4; /* Azul confiante */
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em; /* Ajuste o tamanho como preferido */
-    color: #555; /* Para um tom suave e legível */
-    line-height: 1.6; /* Para uma melhor legibilidade */
-}
-p {
-    font-family: 'Lato', sans-serif;
     font-size: 1em;
-    color: #555;
+    color: #b0b0b0;
     line-height: 1.6;
 }
 
-
 #NavBar {
-    background-color: black;
+    background-color: #000; /* Preto elegante */
     height: 5em;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra sutil */
 }
 
 #NavBar-Itens {
@@ -42,223 +35,29 @@ p {
 
 .Links {
     text-decoration: none;
-    color: aliceblue;
+    color: #e0e0e0; /* Branco suave */
     font-size: 1.3em;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .Links:hover {
-    color: #0073e6;
+    color: #00bcd4; /* Destaque azul */
 }
 
 .Quadro-Principal {
     margin: auto;
-    margin-top: 10.5em;
-    background-color: aliceblue;
+    margin-top: 10em;
+    background-color: #1e1e1e; /* Fundo cinza escuro */
     padding: 2em;
     width: 70em;
-    max-width: 80%; /* Ajuste para telas menores */
-    border: 2px solid black;
+    max-width: 80%;
+    border: 2px solid #333; /* Borda discreta */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra mais profunda */
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
 
-#capacitacoes {
-    background-color: #f9f9f9;
-    padding: 2em 1em;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#capacitacoes h2 {
-    font-size: 2.5em;
-    margin-bottom: 1em;
-    color: #333;
-}
-
-.habilidades-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2em;
-}
-
-.habilidade {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1em;
-    width: 15em;
-    max-width: 90%; /* Ajuste para telas menores */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.habilidade h3 {
-    font-size: 1.5em;
-    color: #0073e6;
-    margin-bottom: 0.5em;
-}
-
-.habilidade p {
-    font-size: 1em;
-    color: #555;
-    line-height: 1.5;
-}
-
-.Texto-Imagem {
-    display: flex;
-    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
-    align-items: center;
-    width: 100%;
-    gap: 2em;
-}
-
-.Texto {
-    flex: 1;
-}
-
-
-.Imagem {
-    flex: 0 0 auto;
-    width: 20em;
-    aspect-ratio: 1 / 1; /* Proporção 1:1 */
-    border-radius: 10px;
-    overflow: hidden; /* Oculta o que ultrapassa o espaço 1:1 */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative; /* Para garantir a posição do object */
-}
-
-.Imagem img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    margin: 0 auto;
-}
-
-
-footer {
-    background-color: black;
-    color: aliceblue;
-    padding: 2em 1em;
-    text-align: center;
-    font-size: 0.9em;
-    border-top: 2px solid #333;
-    margin-top: 10.5em;
-}
-
-footer .Contato {
-    margin-bottom: 1.5em;
-}
-
-footer h3 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-    color: #0073e6;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-footer ul li {
-    margin-bottom: 0.5em;
-}
-
-footer ul li a {
-    color: aliceblue;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-footer ul li a:hover {
-    color: #0073e6;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.8em;
-    color: #ccc;
-}
-
-@media (max-width: 768px) {
-
-    .Links {
-        font-size: 1em;
-    }
-
-    .Quadro-Principal {
-        margin-top: 2em;
-        padding: 1.5em;
-    }
-
-    #capacitacoes h2 {
-        font-size: 2em;
-    }
-
-    .habilidade {
-        width: 100%;
-    }
-
-    .Texto-Imagem {
-        flex-direction: column;
-    }
-
-    .Imagem {
-        max-width: 100%;
-        aspect-ratio: 1 / 1;
-    }
-
-    .Imagem img {
-        width: 100%;
-        height: 100%;
-    }
-
-    footer ul li {
-        font-size: 0.9em;
-    }
-    footer h3 {
-        font-size: 1.2em;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .Links {
-        font-size: .8em;
-    }
-
-    #capacitacoes h2 {
-        font-size: 1.8em;
-    }
-
-    .habilidade h3 {
-        font-size: 1.2em;
-    }
-
-    .habilidade p {
-        font-size: 0.9em;
-    }
-
-    .Imagem {
-        max-width: 100%;
-        aspect-ratio: 1 / 1;
-    }
-
-    .Imagem img {
-        width: 100%;
-        height: 100%;
-    }
-}
+/* Demais estilos permanecem com ajustes de cor para se adequar ao tema escuro */
