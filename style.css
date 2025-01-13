@@ -2,7 +2,8 @@ body {
     margin: 0;
     border: 0;
     padding: 0;
-    background-color: darkgray;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */    
     height: 100%;
     font-family: Arial, sans-serif;
 }
@@ -10,28 +11,25 @@ body {
 h1, h2, h3, nav {
     font-family: 'Oswald', sans-serif;
     font-weight: 700; /* Para títulos, um peso mais grosso é ideal */
+    color: #7C33FF; /* Roxo principal */
 }
 
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 1em; /* Ajuste o tamanho como preferido */
-    color: #555; /* Para um tom suave e legível */
+    color: #b0b0b0;
     line-height: 1.6; /* Para uma melhor legibilidade */
-}
-p {
-    font-family: 'Lato', sans-serif;
-    font-size: 1em;
-    color: #555;
-    line-height: 1.6;
 }
 
 
 #NavBar {
-    background-color: black;
+    background-color: #000; /* Preto elegante */
     height: 5em;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+    border-bottom: 3px solid #7C33FF; /* Borda inferior roxa */
 }
 
 #NavBar-Itens {
@@ -42,43 +40,43 @@ p {
 
 .Links {
     text-decoration: none;
-    color: aliceblue;
+    color: #d9d9d9; /* Branco suave */
     font-size: 1.3em;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .Links:hover {
-    color: #0073e6;
+    color: #9B4DFF; /* Tom mais claro de roxo */
+    border-bottom: 2px solid #9B4DFF; /* Linha roxa ao passar o mouse */
 }
 
 .Quadro-Principal {
     margin: auto;
     margin-top: 10.5em;
-    background-color: aliceblue;
+    background-color: #1e1e1e; /* Fundo cinza escuro */
     padding: 2em;
     width: 70em;
     max-width: 80%; /* Ajuste para telas menores */
-    border: 2px solid black;
+    border: 3px solid #7C33FF; /* Borda roxa */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra mais profunda */
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
 
-#capacitacoes {
-    background-color: #f9f9f9;
+#Quadro-Principal2 {
+    background-color: #1e1e1e; /* Fundo cinza escuro */
     padding: 2em 1em;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 3px solid #6302FF; /* Borda roxa */
 }
 
-#capacitacoes h2 {
+#Quadro-Principal2 h2 {
     font-size: 2.5em;
     margin-bottom: 1em;
-    color: #333;
 }
 
 .habilidades-container {
@@ -89,25 +87,25 @@ p {
 }
 
 .habilidade {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #1e1e1e; /* Fundo cinza escuro */
+    border: 3px solid #9068d1; /* Borda roxa */
     border-radius: 8px;
     padding: 1em;
     width: 15em;
     max-width: 90%; /* Ajuste para telas menores */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
     text-align: left;
 }
 
 .habilidade h3 {
     font-size: 1.5em;
-    color: #0073e6;
+    color: #6302FF;
     margin-bottom: 0.5em;
 }
 
 .habilidade p {
     font-size: 1em;
-    color: #555;
+    color: #b0b0b0;
     line-height: 1.5;
 }
 
@@ -153,7 +151,7 @@ footer {
     padding: 2em 1em;
     text-align: center;
     font-size: 0.9em;
-    border-top: 2px solid #333;
+    border-top: 3px solid #7C33FF; /* Borda superior roxa */
     margin-top: 10.5em;
 }
 
@@ -164,7 +162,7 @@ footer .Contato {
 footer h3 {
     font-size: 1.5em;
     margin-bottom: 0.5em;
-    color: #0073e6;
+    color: #7C33FF; /* Destaque roxo */
 }
 
 footer ul {
@@ -178,13 +176,13 @@ footer ul li {
 }
 
 footer ul li a {
-    color: aliceblue;
+    color: #d9d9d9;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s, text-shadow 0.3s;
 }
 
 footer ul li a:hover {
-    color: #0073e6;
+    color: #9B4DFF; /* Tom mais claro de roxo */
 }
 
 footer p {
@@ -261,4 +259,5 @@ footer p {
         width: 100%;
         height: 100%;
     }
-}
+} 
+
