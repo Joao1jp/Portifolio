@@ -194,7 +194,7 @@ footer p {
 @media (max-width: 768px) {
 
     .Links {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .Quadro-Principal {
@@ -235,7 +235,7 @@ footer p {
 @media (max-width: 480px) {
 
     .Links {
-        font-size: .8em;
+        font-size: 1em;
     }
 
     #capacitacoes h2 {
