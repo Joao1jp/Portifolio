@@ -33,35 +33,31 @@ html, body {
     gap: 2em;
 }
 
-/* Sobrescreve os efeitos do gradiente para os links do header */
+/* Específico para os links do header: sem gradiente, cor definida */
 #NavBar .Links {
     background: none;
     -webkit-background-clip: initial;
-    -webkit-text-fill-color: #d9d9d9;
+    -webkit-text-fill-color: initial;
     color: #d9d9d9;
-}
-
-
-.Links {
     text-decoration: none;
-    color: #d9d9d9;
     font-size: 1.3em;
     font-weight: bold;
     transition: color 0.3s, transform 0.3s;
 }
 
-.Links:hover {
+#NavBar .Links:hover {
     color: #9B4DFF;
     transform: scale(1.05);
     border-bottom: 2px solid #9B4DFF;
 }
 
-/* Títulos com fonte Montserrat, gradiente de cores e animação de brilho */
-h1, h2, h3, nav {
+/* Títulos fora do header com fonte Montserrat, gradiente e animação */
+h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-align: center;
     background: linear-gradient(45deg, #4B0082, #9B4DFF);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: pulse 3s infinite alternate;
 }
@@ -92,7 +88,7 @@ main {
     scroll-behavior: smooth;
 }
 
-/* Cada "tela" ocupa uma tela inteira (100vw x 100% do main) */
+/* Cada "tela" ocupa 100vw x 100% do main */
 .Quadro-Principal {
     flex: 0 0 100vw;
     height: 100%;
@@ -211,29 +207,21 @@ main {
     right: 10px;
 }
 
-/* Estilização para dispositivos móveis: rolagem vertical padrão */
+/* Layout para dispositivos móveis: rolagem vertical padrão */
 @media (max-width: 768px) {
-    /* Muda o layout do main para vertical */
     main {
         flex-direction: column;
         position: relative;
-        top: 0;
+        top: 5em;
         height: auto;
         width: 100%;
         overflow-y: auto;
     }
-    /* Cada seção ocupa a largura total e altura automática */
     .Quadro-Principal {
         flex: 0 0 auto;
         width: 100vw;
         height: auto;
         margin-bottom: 1em;
-    }
-    /* Exibe a navbar normalmente */
-    #NavBar {
-        position: fixed;
-        top: 0;
-        width: 100vw;
     }
     /* Oculta os botões de rolagem lateral */
     #scroll-button-prev,
@@ -242,7 +230,7 @@ main {
     }
 }
 
-/* Estilização extra para dispositivos muito pequenos */
+/* Ajustes extras para dispositivos muito pequenos */
 @media (max-width: 480px) {
     .Links {
         font-size: 1em;
