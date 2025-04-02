@@ -1,13 +1,12 @@
 /* Importação de fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap');
 
-/* Regras gerais para tela inteira sem rolagem manual */
+/* Regras gerais para tela inteira */
 html, body {
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background: linear-gradient(135deg, #121212, #1a1a1a);
     font-family: 'Lato', sans-serif;
     color: #e0e0e0;
@@ -34,6 +33,15 @@ html, body {
     gap: 2em;
 }
 
+/* Sobrescreve os efeitos do gradiente para os links do header */
+#NavBar .Links {
+    background: none;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: #d9d9d9;
+    color: #d9d9d9;
+}
+
+
 .Links {
     text-decoration: none;
     color: #d9d9d9;
@@ -54,7 +62,6 @@ h1, h2, h3, nav {
     font-weight: 700;
     text-align: center;
     background: linear-gradient(45deg, #4B0082, #9B4DFF);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: pulse 3s infinite alternate;
 }
@@ -72,7 +79,7 @@ p {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
-/* Main com rolagem programada; rolagem manual desabilitada */
+/* Layout para desktop: rolagem horizontal */
 main {
     display: flex;
     flex-direction: row;
@@ -85,7 +92,7 @@ main {
     scroll-behavior: smooth;
 }
 
-/* Cada tela ocupa uma tela inteira (100vw x 100% do main) */
+/* Cada "tela" ocupa uma tela inteira (100vw x 100% do main) */
 .Quadro-Principal {
     flex: 0 0 100vw;
     height: 100%;
@@ -204,28 +211,38 @@ main {
     right: 10px;
 }
 
-/* Responsividade */
+/* Estilização para dispositivos móveis: rolagem vertical padrão */
 @media (max-width: 768px) {
-    .Links {
-        font-size: 1.2em;
-    }
-    .Quadro-Principal {
-        padding: 1.5em;
-    }
-    h2 {
-        font-size: 2em;
-    }
-    .card {
-        width: 9em;
-    }
-    .Texto-Imagem {
+    /* Muda o layout do main para vertical */
+    main {
         flex-direction: column;
+        position: relative;
+        top: 0;
+        height: auto;
+        width: 100%;
+        overflow-y: auto;
     }
-    .Imagem {
-        max-width: 100%;
+    /* Cada seção ocupa a largura total e altura automática */
+    .Quadro-Principal {
+        flex: 0 0 auto;
+        width: 100vw;
+        height: auto;
+        margin-bottom: 1em;
+    }
+    /* Exibe a navbar normalmente */
+    #NavBar {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+    }
+    /* Oculta os botões de rolagem lateral */
+    #scroll-button-prev,
+    #scroll-button-next {
+        display: none;
     }
 }
 
+/* Estilização extra para dispositivos muito pequenos */
 @media (max-width: 480px) {
     .Links {
         font-size: 1em;
